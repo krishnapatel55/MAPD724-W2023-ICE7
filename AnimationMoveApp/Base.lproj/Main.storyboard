@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationMoveApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zUw-i8-UNp">
+                                <rect key="frame" x="82" y="223" width="228" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cuX-pp-iVI">
+                                <rect key="frame" x="76" y="328" width="240" height="196"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is a Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IST-JB-njh">
+                                <rect key="frame" x="130" y="159" width="132" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="cuX-pp-iVI" firstAttribute="top" secondItem="zUw-i8-UNp" secondAttribute="bottom" constant="71" id="0xX-RA-GMa"/>
+                            <constraint firstItem="cuX-pp-iVI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7CP-mL-mVf"/>
+                            <constraint firstItem="IST-JB-njh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="9QL-le-OAP"/>
+                            <constraint firstItem="IST-JB-njh" firstAttribute="centerX" secondItem="zUw-i8-UNp" secondAttribute="centerX" id="ErY-v8-hbA"/>
+                            <constraint firstItem="IST-JB-njh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IsR-PI-tGy"/>
+                            <constraint firstItem="cuX-pp-iVI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="Jkm-Qe-ni2"/>
+                            <constraint firstItem="IST-JB-njh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="LVu-Oh-kEu"/>
+                            <constraint firstItem="zUw-i8-UNp" firstAttribute="centerX" secondItem="cuX-pp-iVI" secondAttribute="centerX" id="NyV-yi-aHt"/>
+                            <constraint firstItem="zUw-i8-UNp" firstAttribute="top" secondItem="IST-JB-njh" secondAttribute="bottom" constant="40" id="au1-2R-Bd3"/>
+                            <constraint firstItem="zUw-i8-UNp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="uJG-hO-m8r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="cuX-pp-iVI" id="nah-h8-oKs"/>
+                        <outlet property="myLabel" destination="IST-JB-njh" id="94U-AG-NCn"/>
+                        <outlet property="myTextField" destination="zUw-i8-UNp" id="DfJ-Ve-QiM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
